@@ -34,9 +34,10 @@ class StartPage extends StatelessWidget {
               TextField(
                 controller: controller,
                 onSubmitted: (str) =>
-                    switchScreen("http://10.10.110.5:3000/upload", context),
+                    //enter the ip address
+                    switchScreen("http://xx.xx.xxx.xx:xxxx/upload", context),
               ),
-              FlatButton(
+              TextButton(
                 child: Text("Take me to the upload screen"),
                 onPressed: () => switchScreen(controller.text, context),
               )
